@@ -3,8 +3,10 @@
 
 **Fury is 3" sub250 freestyle type drone, for 3S/4S batteries, with fully 3D printed construction**
 
+ ![Fury](images/fury.png)
 
 *Speed can be reduced in edgeTX system using logical switch based on the speed read from GNSS, and the mix function. The project includes a configuration that limits the speed when SB is UP*
+
 
 
 ## 3D printing

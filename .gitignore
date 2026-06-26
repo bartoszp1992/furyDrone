@@ -1,0 +1,6 @@
+*.FCBak
+controller/chimera controller sdcard/LOGS/*
+!controller/chimera controller sdcard/LOGS/readme.txt
+connections/chimeraConn/chimeraConn-backups
+releases
+*.pdf

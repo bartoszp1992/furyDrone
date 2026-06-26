@@ -1,0 +1,13 @@
+profile 0
+
+set i_pitch = 100
+set i_roll = 95
+set i_yaw = 95
+set dyn_idle_min_rpm = 20
+set simplified_i_gain = 120
+
+
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set rpm_filter_weights = 100,50,80
+set rpm_filter_q = 775

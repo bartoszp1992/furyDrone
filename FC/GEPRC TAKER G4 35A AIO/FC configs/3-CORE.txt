@@ -34,6 +34,7 @@ set align_board_yaw = -45
 set bat_capacity = 650
 set vbat_max_cell_voltage = 435
 set ibata_scale = 100
+set yaw_motors_reversed = ON
 set 3d_deadband_low = 1400
 set 3d_deadband_high = 1600
 set 3d_neutral = 1500

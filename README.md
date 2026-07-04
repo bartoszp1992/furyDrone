@@ -142,5 +142,7 @@ Source code is available at: https://github.com/bird-sanctuary/bluejay
 All respective rights belong to the original authors and contributors.
 This repository does not claim ownership of these projects and only redistributes unmodified binaries for convenience.
 
+Binaries are named with their version, target and build identifier where applicable.
+
 
 *BD1 stands for "Bart's Design 1"*

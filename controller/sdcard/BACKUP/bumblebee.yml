@@ -395,40 +395,6 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "lights"
- -
-   destCh: 11
-   srcRaw: "ls(17)"
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   delayPrec: 0
-   speedPrec: 0
-   flightModes: 000000000
-   weight: 100
-   offset: 0
-   swtch: "NONE"
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "3D"
- -
-   destCh: 12
-   srcRaw: "ls(16)"
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   delayPrec: 0
-   speedPrec: 0
-   flightModes: 000000000
-   weight: 100
-   offset: 0
-   swtch: "NONE"
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "VTX"
 limitData: 
    0:
       min: 0
@@ -570,7 +536,7 @@ expoData:
    scale: 0
    trimSource: 0
    srcRaw: "P1"
-   weight: 100
+   weight: -100
    offset: 0
    swtch: "NONE"
    curve: 
@@ -626,7 +592,7 @@ expoData:
    scale: 0
    trimSource: 0
    srcRaw: "P2"
-   weight: -100
+   weight: 100
    offset: 0
    swtch: "NONE"
    curve: 
@@ -639,7 +605,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "MIN"
+   srcRaw: "SW1"
    weight: 100
    offset: 0
    swtch: "NONE"
@@ -653,7 +619,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "MIN"
+   srcRaw: "SW2"
    weight: 100
    offset: 0
    swtch: "NONE"
@@ -667,7 +633,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "MIN"
+   srcRaw: "SW3"
    weight: 100
    offset: 0
    swtch: "NONE"
@@ -681,7 +647,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "MIN"
+   srcRaw: "SW4"
    weight: 100
    offset: 0
    swtch: "NONE"
@@ -695,7 +661,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "MIN"
+   srcRaw: "SW5"
    weight: 100
    offset: 0
    swtch: "NONE"
@@ -709,7 +675,7 @@ expoData:
    mode: 3
    scale: 0
    trimSource: 0
-   srcRaw: "MIN"
+   srcRaw: "SW6"
    weight: 100
    offset: 0
    swtch: "NONE"
@@ -768,15 +734,15 @@ logicalSw:
    0:
       func: FUNC_VPOS
       def: "tele(3),90"
-      andsw: "!SA2"
+      andsw: "!SB0"
       lsPersist: 0
       lsState: 0
       delay: 0
       duration: 0
    1:
       func: FUNC_VNEG
-      def: "tele(18),30"
-      andsw: "!SA2"
+      def: "tele(18),10"
+      andsw: "!SB0"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -784,7 +750,7 @@ logicalSw:
    2:
       func: FUNC_VPOS
       def: "tele(1),480"
-      andsw: "SA1"
+      andsw: "SB1"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -792,7 +758,7 @@ logicalSw:
    3:
       func: FUNC_VPOS
       def: "tele(1),550"
-      andsw: "SA1"
+      andsw: "SB1"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -800,7 +766,7 @@ logicalSw:
    4:
       func: FUNC_VPOS
       def: "tele(1),620"
-      andsw: "SA1"
+      andsw: "SB1"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -885,6 +851,14 @@ logicalSw:
       lsState: 0
       delay: 0
       duration: 0
+   63:
+      func: FUNC_VPOS
+      def: "SC,0"
+      andsw: "SA2"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 0
 customFn: 
    0:
       swtch: "!SA2"
@@ -893,7 +867,7 @@ customFn:
    1:
       swtch: "L1"
       func: PLAY_SOUND
-      def: "Robt,1,4"
+      def: "Robt,1,10"
    2:
       swtch: "L3"
       func: PLAY_SOUND
@@ -921,8 +895,6 @@ switchWarning:
    SD:
       pos: up
    SE:
-      pos: up
-   SF:
       pos: up
 varioData: 
    source: 23
@@ -998,9 +970,9 @@ inputNames:
 potsWarnEnabled: 3
 potsWarnPosition: 
    0:
-      val: -64
+      val: 64
    1:
-      val: -64
+      val: 19
 telemetrySensors: 
    0:
       id1: 
@@ -1502,12 +1474,35 @@ screens:
                      val: tele(7)
                   1:
                      val: tele(4)
+   1:
+      type: VALUES
+      u: 
+         lines: 
+            0:
+               sources: 
+                  0:
+                     val: tele(16)
+                  1:
+                     val: tele(15)
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 functionSwitchConfig: 2730
 functionSwitchGroup: 27285
-functionSwitchStartConfig: 2730
+functionSwitchStartConfig: 340
 functionSwitchLogicalState: 33
+switchNames: 
+   0:
+      val: "s1"
+   1:
+      val: "s2"
+   2:
+      val: "s3"
+   3:
+      val: "s4"
+   4:
+      val: "s5"
+   5:
+      val: "s6"
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
 usbJoystickCircularCut: 0

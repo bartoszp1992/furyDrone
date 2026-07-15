@@ -260,23 +260,6 @@ mixData:
    speedDown: 0
    name: "mul"
  -
-   destCh: 3
-   srcRaw: "ch(0)"
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   delayPrec: 0
-   speedPrec: 0
-   flightModes: 000000000
-   weight: 80
-   offset: 0
-   swtch: "SD2"
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "1hnd"
- -
    destCh: 4
    srcRaw: "I5"
    carryTrim: 0
@@ -412,40 +395,6 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "lights"
- -
-   destCh: 11
-   srcRaw: "ls(17)"
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   delayPrec: 0
-   speedPrec: 0
-   flightModes: 000000000
-   weight: 100
-   offset: 0
-   swtch: "NONE"
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "3D"
- -
-   destCh: 12
-   srcRaw: "ls(16)"
-   carryTrim: 0
-   mixWarn: 0
-   mltpx: ADD
-   delayPrec: 0
-   speedPrec: 0
-   flightModes: 000000000
-   weight: 100
-   offset: 0
-   swtch: "NONE"
-   delayUp: 0
-   delayDown: 0
-   speedUp: 0
-   speedDown: 0
-   name: "VTX"
 limitData: 
    0:
       min: 0
@@ -792,7 +741,7 @@ logicalSw:
       duration: 0
    1:
       func: FUNC_VNEG
-      def: "tele(18),30"
+      def: "tele(18),10"
       andsw: "!SB0"
       lsPersist: 0
       lsState: 0
@@ -918,7 +867,7 @@ customFn:
    1:
       swtch: "L1"
       func: PLAY_SOUND
-      def: "Robt,1,4"
+      def: "Robt,1,10"
    2:
       swtch: "L3"
       func: PLAY_SOUND
@@ -935,6 +884,35 @@ customFn:
       swtch: "SC0"
       func: VARIO
       def: "1"
+flightModeData: 
+   0:
+      trim: 
+         0:
+            value: -6
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
 thrTraceSrc: Thr
 switchWarning: 
    SA:

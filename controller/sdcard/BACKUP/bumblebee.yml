@@ -734,7 +734,7 @@ logicalSw:
    0:
       func: FUNC_VPOS
       def: "tele(3),90"
-      andsw: "!SB0"
+      andsw: "!SA2"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -742,7 +742,7 @@ logicalSw:
    1:
       func: FUNC_VNEG
       def: "tele(18),10"
-      andsw: "!SB0"
+      andsw: "!SA2"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -750,7 +750,7 @@ logicalSw:
    2:
       func: FUNC_VPOS
       def: "tele(1),480"
-      andsw: "SB1"
+      andsw: "SA1"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -758,7 +758,7 @@ logicalSw:
    3:
       func: FUNC_VPOS
       def: "tele(1),550"
-      andsw: "SB1"
+      andsw: "SA1"
       lsPersist: 0
       lsState: 0
       delay: 0
@@ -766,7 +766,7 @@ logicalSw:
    4:
       func: FUNC_VPOS
       def: "tele(1),620"
-      andsw: "SB1"
+      andsw: "SA1"
       lsPersist: 0
       lsState: 0
       delay: 0

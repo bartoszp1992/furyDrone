@@ -68,6 +68,23 @@ mixData:
    name: "mul"
  -
    destCh: 0
+   srcRaw: "I19"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 50
+   offset: 80
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "mul"
+ -
+   destCh: 0
    srcRaw: "I3"
    carryTrim: 0
    mixWarn: 0
@@ -111,6 +128,23 @@ mixData:
    flightModes: 000000000
    weight: 50
    offset: 50
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "mul"
+ -
+   destCh: 1
+   srcRaw: "I19"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 50
+   offset: 80
    swtch: "NONE"
    delayUp: 0
    delayDown: 0
@@ -253,6 +287,23 @@ mixData:
    flightModes: 000000000
    weight: 50
    offset: 50
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: "mul"
+ -
+   destCh: 3
+   srcRaw: "I19"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: MUL
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 50
+   offset: 80
    swtch: "NONE"
    delayUp: 0
    delayDown: 0
@@ -685,6 +736,34 @@ expoData:
    chn: 17
    flightModes: 000000000
    name: ""
+ -
+   mode: 3
+   scale: 0
+   trimSource: 0
+   srcRaw: "GR1"
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
+   chn: 18
+   flightModes: 000000000
+   name: ""
+ -
+   mode: 3
+   scale: 0
+   trimSource: 0
+   srcRaw: "GR2"
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   curve: 
+      type: 1
+      value: 0
+   chn: 19
+   flightModes: 000000000
+   name: ""
 curves: 
    0:
       type: 0
@@ -967,12 +1046,16 @@ inputNames:
       val: "s5"
    17:
       val: "s6"
+   18:
+      val: "g1"
+   19:
+      val: "g2"
 potsWarnEnabled: 3
 potsWarnPosition: 
    0:
       val: 64
    1:
-      val: 19
+      val: 64
 telemetrySensors: 
    0:
       id1: 
@@ -1488,8 +1571,8 @@ view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 functionSwitchConfig: 2730
 functionSwitchGroup: 27285
-functionSwitchStartConfig: 340
-functionSwitchLogicalState: 33
+functionSwitchStartConfig: 1105
+functionSwitchLogicalState: 18
 switchNames: 
    0:
       val: "s1"

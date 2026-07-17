@@ -395,6 +395,23 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "lights"
+ -
+   destCh: 11
+   srcRaw: "I12"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 0
+   offset: 0
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
 limitData: 
    0:
       min: 0

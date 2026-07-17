@@ -446,6 +446,23 @@ mixData:
    speedUp: 0
    speedDown: 0
    name: "lights"
+ -
+   destCh: 11
+   srcRaw: "I18"
+   carryTrim: 0
+   mixWarn: 0
+   mltpx: ADD
+   delayPrec: 0
+   speedPrec: 0
+   flightModes: 000000000
+   weight: 100
+   offset: 0
+   swtch: "NONE"
+   delayUp: 0
+   delayDown: 0
+   speedUp: 0
+   speedDown: 0
+   name: ""
 limitData: 
    0:
       min: 0
@@ -1572,7 +1589,7 @@ modelRegistrationID: "*\x15*\x15!\x03%\x07"
 functionSwitchConfig: 2730
 functionSwitchGroup: 27285
 functionSwitchStartConfig: 1105
-functionSwitchLogicalState: 18
+functionSwitchLogicalState: 17
 switchNames: 
    0:
       val: "s1"

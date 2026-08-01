@@ -175,7 +175,7 @@ Version: `v0.21.0`
 
 Included firmware:
 
-- `J_H_15_48_v0.21.0`
+- `J_H_15_48_v0.21.0.hex`
 
 This is an unmodified Bluejay firmware binary from the upstream
 `v0.21.0` release.
@@ -185,7 +185,7 @@ Corresponding source:
 Bluejay repository, tag `v0.21.0`.
 
 Bluejay is distributed under the GNU General Public License version 3.
-A copy of the GNU GPL v3 is included in this repository as `GPL-3.0.txt`.
+A copy of the GNU GPL v3 is included in this repository as `LICENSE.txt`.
 
 ### Copyright and attribution
 
@@ -196,4 +196,5 @@ This repository does not claim ownership of Betaflight or Bluejay and is
 not affiliated with or endorsed by either project.
 
 [Betaflight](https://github.com/betaflight/betaflight/tree/2025.12.2)
+
 [Bluejay](https://github.com/bird-sanctuary/bluejay/tree/v0.21.0)

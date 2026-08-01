@@ -122,27 +122,78 @@ I don't recommend using SS nozzle becouse it's too cold for my printer.
 project contains configuration for HD version with BZ- pin used as VTX power switch. Implementation below:
 ![VTX power switch](images/switch.png)
 
-## firmware
+**Thanks Baro for PID tunes!!**
+*BD1 stands for "Bart's Design 1"*
+
+# firmware
 If you are building remotely:
 > choose analog OSD Protocol and type **OSD_HD** in custom defines, to build firmware with both- digital and analog OSD 
 > In other options add **Magnetometers**, **Position Hold** and **Altitude Hold**
 
-**Thanks Baro for PID tunes!!**
+## notice
+This repository includes third-party firmware binaries used by this FPV drone.
 
-Firmware notice
+### Betaflight
 
-This repository may include firmware binaries and configuration files for flight controllers and ESCs.
+Version: `2025.12.2`
 
-Betaflight firmware is licensed under the GNU General Public License v3.0 (GPL-3.0).
-Source code is available at: https://github.com/betaflight/betaflight
+Included firmware:
 
-Bluejay ESC firmware is licensed under the GNU General Public License v3.0 (GPL-3.0).
-Source code is available at: https://github.com/bird-sanctuary/bluejay
+- `betaflight_2025.12.2_STM32G47X_TAKERG4AIO_839441c9.hex`
 
-All respective rights belong to the original authors and contributors.
-This repository does not claim ownership of these projects and only redistributes unmodified binaries for convenience.
+These firmware files were generated using the official Betaflight Cloud
+Build service from Betaflight `2025.12.2`.
 
-Binaries are named with their version, target and build identifier where applicable.
+Flight controller targets:
 
+- `TAKERG4AIO`
 
-*BD1 stands for "Bart's Design 1"*
+Additional build options used for this project:
+
+- Analog OSD
+- `OSD_HD`
+- Magnetometers (`MAG`)
+- Position Hold (`POSITION_HOLD`)
+- Altitude Hold (`ALTITUDE_HOLD`)
+
+No modifications were made to the Betaflight source code by this repository.
+The options listed above are compile-time options supported by the official
+Betaflight build system.
+
+Corresponding source:
+
+Betaflight repository, tag `2025.12.2`
+(including the `src/config` target configuration submodule referenced by
+that source version).
+
+Betaflight is distributed under the GNU General Public License version 3.
+A copy of the GNU GPL v3 is included in this repository as `GPL-3.0.txt`.
+
+### Bluejay
+
+Version: `v0.21.0`
+
+Included firmware:
+
+- `J_H_15_48_v0.21.0`
+
+This is an unmodified Bluejay firmware binary from the upstream
+`v0.21.0` release.
+
+Corresponding source:
+
+Bluejay repository, tag `v0.21.0`.
+
+Bluejay is distributed under the GNU General Public License version 3.
+A copy of the GNU GPL v3 is included in this repository as `GPL-3.0.txt`.
+
+### Copyright and attribution
+
+Betaflight and Bluejay are independent open-source projects.
+Copyright remains with their respective authors and contributors.
+
+This repository does not claim ownership of Betaflight or Bluejay and is
+not affiliated with or endorsed by either project.
+
+[Betaflight](https://github.com/betaflight/betaflight/tree/2025.12.2)
+[Bluejay](https://github.com/bird-sanctuary/bluejay/tree/v0.21.0)

@@ -1,4 +1,4 @@
-semver: 2.11.4
+semver: 2.11.6
 header: 
    name: "Barts Dsgn"
 timers: 
@@ -973,7 +973,7 @@ customFn:
       func: PLAY_SOUND
       def: "Tada,1,2"
    4:
-      swtch: "SB1"
+      swtch: "SD2"
       func: TRAINER
       def: "sticks,1"
    5:
@@ -984,13 +984,9 @@ thrTraceSrc: Thr
 switchWarning: 
    SA:
       pos: down
-   SB:
-      pos: down
    SC:
       pos: up
    SD:
-      pos: up
-   SE:
       pos: up
 varioData: 
    source: 23
@@ -1004,7 +1000,7 @@ rfAlarms:
    warning: 45
    critical: 42
 thrTrimSw: 0
-potsWarnMode: WARN_MANUAL
+potsWarnMode: WARN_OFF
 jitterFilter: GLOBAL
 moduleData: 
    0:
@@ -1584,35 +1580,27 @@ screens:
                      val: tele(16)
                   1:
                      val: tele(15)
+   2:
+      type: SCRIPT
+      u: 
+         script: 
+            file: "GPSqr"
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 functionSwitchConfig: 2730
 functionSwitchGroup: 27285
 functionSwitchStartConfig: 1105
-functionSwitchLogicalState: 17
-switchNames: 
-   0:
-      val: "s1"
-   1:
-      val: "s2"
-   2:
-      val: "s3"
-   3:
-      val: "s4"
-   4:
-      val: "s5"
-   5:
-      val: "s6"
+functionSwitchLogicalState: 18
 usbJoystickExtMode: 0
 usbJoystickIfMode: JOYSTICK
 usbJoystickCircularCut: 0
 radioGFDisabled: GLOBAL
 radioTrainerDisabled: GLOBAL
-modelHeliDisabled: GLOBAL
-modelFMDisabled: GLOBAL
+modelHeliDisabled: OFF
+modelFMDisabled: OFF
 modelCurvesDisabled: GLOBAL
 modelGVDisabled: GLOBAL
 modelLSDisabled: GLOBAL
 modelSFDisabled: GLOBAL
-modelCustomScriptsDisabled: GLOBAL
+modelCustomScriptsDisabled: OFF
 modelTelemetryDisabled: GLOBAL

@@ -1,0 +1,10 @@
+profile 0
+
+# profile 0
+set d_pitch = 26
+set d_roll = 25
+set d_max_roll = 33
+set d_max_pitch = 34
+set simplified_d_gain = 85
+set simplified_d_max_gain = 90
+set simplified_pitch_d_gain = 90

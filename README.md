@@ -135,14 +135,15 @@ This repository includes third-party firmware binaries used by this FPV drone.
 
 ### Betaflight
 
-Version: `2025.12.2`
+Versions:
+- `2025.12.2`
 
 Included firmware:
 
 - `betaflight_2025.12.2_STM32G47X_TAKERG4AIO_839441c9.hex`
 
 These firmware files were generated using the official Betaflight Cloud
-Build service from Betaflight `2025.12.2`.
+Build service.
 
 Flight controller targets:
 
@@ -162,7 +163,8 @@ Betaflight build system.
 
 Corresponding source:
 
-https://github.com/betaflight/betaflight,  tag `2025.12.2`
+https://github.com/betaflight/betaflight
+Tag corresponding to firmware version.
 
 Betaflight is distributed under the GNU General Public License version 3.
 A copy of the GNU GPL v3 is included in this repository as `GPL-3.0.txt`.

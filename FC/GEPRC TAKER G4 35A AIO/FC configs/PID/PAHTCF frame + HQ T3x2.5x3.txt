@@ -9,3 +9,4 @@ set dyn_idle_min_rpm = 20
 set simplified_d_gain = 85
 set simplified_d_max_gain = 90
 set simplified_pitch_d_gain = 90
+set launch_control_mode = FULL

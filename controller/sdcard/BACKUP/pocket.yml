@@ -901,6 +901,35 @@ customFn:
       swtch: "SC0"
       func: VARIO
       def: "1"
+flightModeData: 
+   0:
+      trim: 
+         1:
+            value: -2
+            mode: 0
+      name: ""
+      swtch: "NONE"
+      fadeIn: 0
+      fadeOut: 0
+      gvars: 
+         0:
+            val: 0
+         1:
+            val: 0
+         2:
+            val: 0
+         3:
+            val: 0
+         4:
+            val: 0
+         5:
+            val: 0
+         6:
+            val: 0
+         7:
+            val: 0
+         8:
+            val: 0
 thrTraceSrc: Thr
 switchWarning: 
    SB:
@@ -1495,6 +1524,11 @@ screens:
                      val: tele(16)
                   1:
                      val: tele(15)
+   2:
+      type: SCRIPT
+      u: 
+         script: 
+            file: "GPSqr"
 view: 0
 modelRegistrationID: "*\x15*\x15!\x03%\x07"
 usbJoystickExtMode: 0

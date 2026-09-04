@@ -5,7 +5,7 @@
 
  ![Fury](images/fury.png)
 
-*Speed can be reduced in edgeTX system using logical switch based on the speed read from GNSS, and the mix function. The project includes a configuration that limits the speed when SB is UP*
+*Speed can be reduced in edgeTX system using logical switch based on the speed read from GNSS, and the mix function. The project includes a configuration that can limit speed*
 
 
 

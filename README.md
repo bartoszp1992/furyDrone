@@ -109,13 +109,15 @@ I don't recommend using SS nozzle becouse it's too cold for my printer.
 
 - [ ] 1x 10x130-150mm battery velcro strap
 - [ ] 8x 20mm M2 screws with barrel head for stack mount
-- [ ] 4x 10mm M2 screws with barrel head for body mount
+- [ ] 4x 10mm M2 screws with barrel head for body mount(frame30)
+- [ ] 4x 12mm M2 screw with barrel head for body mount(frame30-R)
 - [ ] 8x M2 H3 D3.6mm brass insert
 - [ ] 2-4x M2 1,6mm nut to lock stack screws
 - [ ] 4x M2 20mm PA screws to mount digital VTX
 - [ ] 4x M2 0,8mm nut to screw in digital VTX
 - [ ] 16x M2 8mm screws for frame30
 - [ ] 16x M2 10mm screws for frame30 with motor screw shims
+- [ ] 16x M2 12mm screws for frame30-R with motor screw shims
 
 
 ## electronics

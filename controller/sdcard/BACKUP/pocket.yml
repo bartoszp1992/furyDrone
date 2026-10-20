@@ -126,8 +126,8 @@ mixData:
    delayPrec: 0
    speedPrec: 0
    flightModes: 000000000
-   weight: 40
-   offset: 0
+   weight: 55
+   offset: -80
    swtch: "L5"
    delayUp: 0
    delayDown: 0
@@ -904,7 +904,13 @@ customFn:
 flightModeData: 
    0:
       trim: 
+         0:
+            value: -8
+            mode: 0
          1:
+            value: 2
+            mode: 0
+         2:
             value: -2
             mode: 0
       name: ""
